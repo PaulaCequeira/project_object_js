@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let ventas = [ {"id" : 11,"monto" : 500},
+					   {"id" : 2,"monto" : 700},
+					   {"id" : 55,"monto" : 300},
+					   {"id" : 88,"monto" : 470},
+					   {"id" : 1,"monto" : 300} ];
+
+		function Venta() {
+			
+		}
+		
+		function montoVentas() {
+			let total_ventas = 0;
+			for (let i in ventas) 
+			{
+				total_ventas = total_ventas + ventas[i].monto;
+			}
+			return total_ventas;
+		}
+		alert(montoVentas());
+	</script>
+</body>
+</html>
